@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Consent</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button onclick="resetConsent()">Reset & Show Popup Again</button>
+    <!-- Overlay (semi-transparent background) -->
+    <div id="cookieOverlay" class="popup-overlay">
+        <!-- The actual popup card -->
+        <div class="cookie-popup">
+            <!-- Header with icon and close button -->
+            <div class="popup-header">
+                <div class="popup-icon">🍪</div>
+                <button class="close-btn" onclick="closePopup()">×</button>
+            </div>
+    
+            <!-- Message text -->
+            <p class="popup-message">We use cookies to improve your user experience.</p>
+    
+            <!-- Accept button -->
+            <button class="popup-button" onclick="acceptCookies()">I like Cookies</button>
+            
+        </div>
+    </div>
+    
+    <!-- Script  -->
+    <script src="script.js"></script>
+</body>
+</html>
